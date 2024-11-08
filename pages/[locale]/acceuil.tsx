@@ -1,13 +1,9 @@
 import React from "react";
 import { Typography } from "@/components/ui/Typography";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Layout from "../layout";
 import Link from "next/link";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { title } from "process";
+
 
 const welcomePages = () => {
     const Item = [
@@ -50,7 +46,7 @@ const welcomePages = () => {
                                        </CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    {item.image && <img src={item.image} alt={item.title} />}
+                                    {/* {item.image && <img src={item.image} alt={item.title} />} */}
                                     <Link href={item.href}><Typography variant="p" className="text-end text-blue-900">Allez à </Typography> </Link>
                                 </CardContent>
                             </Card>

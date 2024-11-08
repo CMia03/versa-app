@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Typography } from '@/components/ui/Typography';
 import { Button } from '../../components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -19,7 +19,8 @@ export default function Calculator() {
     try {
       setInput(eval(input).toString()); // Evaluating the expression
     } catch (error) {
-      setInput('Error');
+      console.log('Error evaluating expression:', error);
+      // setInput('Error');
     }
   };
 

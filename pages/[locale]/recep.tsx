@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../layout";
 import { Typography } from "@/components/ui/Typography";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Item from "../components/item";
 import Link from 'next/link';
 const recepPage = () => {
@@ -22,9 +22,9 @@ const recepPage = () => {
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex flex-col justify-between h-full">
-                                    {item.image && (
-                                        <img src={item.image} alt={item.title} className="object-cover h-[200px] w-full" />
-                                    )}
+                                    {/* {item.image && (
+                                        <Image src={item.image} alt={item.title} className="object-cover h-[200px] w-full" />
+                                    )} */}
                                      <Link href={`/pages/view-recipe/${item.id}`}>
                             <Typography variant="p" className="text-end text-blue-900">
                                 Voir la recette

@@ -67,7 +67,6 @@ const defaultElementMapping: Record<
   base: "p",
 } as const;
 
-const getDefaultElement = (variant: TypographyCvaProps["variant"]) => {};
 
 export function Typography<E extends ElementType = typeof defaultElement>({
   as,

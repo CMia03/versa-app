@@ -2,7 +2,7 @@
 import { useRouter } from 'next/router';
 import ItemData from '../../components/item'; // Assurez-vous que le chemin d'importation est correct
 import Layout from '@/pages/layout';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Typography } from "@/components/ui/Typography";
 
 const RecipeDetail = () => {
@@ -12,7 +12,7 @@ const RecipeDetail = () => {
     const recipe = ItemData.find((item) => item.id === Number(id));
 
     if (!recipe) {
-        return <div>Recette non trouvée</div>;
+        return <div>Recette non trouv&rsquo;e</div>;
     }
     return (
         <>
@@ -27,7 +27,7 @@ const RecipeDetail = () => {
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
-                        <Typography variant="p">Ingrédients</Typography>
+                        <Typography variant="p">Ingr&rsquo;dients</Typography>
                         <CardDescription>
                             {recipe.ingredients.map((ingredient: string, index: number) => (
                                 <Typography variant="p" key={index}>{ingredient}</Typography>
@@ -39,8 +39,8 @@ const RecipeDetail = () => {
                                 <Typography variant="p" key={index}>{instruction}</Typography>
                             ))}
                         </CardDescription>
-                        <Typography variant="p">Et c'est près!!</Typography>
-                        <Typography variant="p">Bonne appétit !!</Typography>
+                        <Typography variant="p">Et c&apos;est pr&rsquo;s!!</Typography>
+                        <Typography variant="p">Bonne app&rsquo;tit !!</Typography>
 
 
                     </CardContent>
