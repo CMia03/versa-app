@@ -14,7 +14,6 @@ const RecipeDetail = () => {
     if (!recipe) {
         return <div>Recette non trouvée</div>;
     }
-
     return (
         <>
             <Layout>
