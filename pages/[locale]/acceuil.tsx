@@ -48,7 +48,7 @@ const welcomePages = () => {
             <Layout>
                 <div className="">
                     <Typography variant="h1" className="text-start sm:md:text-center">Bienvenu dans versa app </Typography>
-                    <Typography variant="p" className="text-start sm:md:text-center">L’application polyvalente pour toutes vos besoins regroupe des outils essentiels comme une calculatrice, des quiz interactifs et des recettes de cuisine, simplifiant ainsi votre quotidien en une seule plateforme pratique.</Typography>
+                    <Typography variant="p" className="text-start sm:md:text-center">L’application polyvalente pour toutes vos besoins regroupe des outils essentiels, simplifiant ainsi votre quotidien en une seule plateforme pratique.</Typography>
                     <div className="flex flex-wrap items-center justify-center">
                         {Item.map((item, index) => (
                             <Card key={index} className="w-[350px] border-gray-300 m-4">
