@@ -3,7 +3,7 @@ import { Typography } from "@/components/ui/Typography";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Layout from "../layout";
 import Link from "next/link";
-import { UtensilsCrossed, MessageCircleQuestion, Calculator  } from "lucide-react"
+import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2   } from "lucide-react"
 import Image from "next/image";
 
 const welcomePages = () => {
@@ -25,6 +25,13 @@ const welcomePages = () => {
             description: "Découvrez des recettes de cuisine.",
             image: <UtensilsCrossed />,
             href: "/pages/recep"
+
+        },
+        {
+            title: "Tic tac Toe",
+            description: "Découvrez des recettes de cuisine.",
+            image: <Gamepad2 />,
+            href: "/pages/game"
 
         }
     ]
