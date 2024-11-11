@@ -33,6 +33,13 @@ const welcomePages = () => {
             image: <Gamepad2 />,
             href: "/pages/game"
 
+        },
+        {
+            title: "Jeux de mémoire",
+            description: "Découvrez des recettes de cuisine.",
+            image: <Gamepad2 />,
+            href: "/pages/memory-game"
+
         }
     ]
 
