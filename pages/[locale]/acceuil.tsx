@@ -3,7 +3,7 @@ import { Typography } from "@/components/ui/Typography";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Layout from "../layout";
 import Link from "next/link";
-import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2   } from "lucide-react"
+import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2, Code  } from "lucide-react"
 import Image from "next/image";
 
 const welcomePages = () => {
@@ -40,6 +40,12 @@ const welcomePages = () => {
             image: <Gamepad2 />,
             href: "/pages/memory-game"
 
+        },
+        {
+            title: "Excercice Algorithme",
+            description: "Découvrez des recettes de cuisine.",
+            image: <Code />,
+            href: "/pages/algo"
         }
     ]
 

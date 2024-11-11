@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Inverser une chaîne",
+    "description": "Écrivez une fonction qui prend une chaîne de caractères et retourne cette chaîne inversée.",
+    "difficulty": "Moyen",
+    "tests": [
+      { "input": "\"hello\"", "output": "\"olleh\"" },
+      { "input": "\"world\"", "output": "\"dlrow\"" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Vérifier si un nombre est pair",
+    "description": "Écrivez une fonction qui prend un nombre en entrée et retourne 'true' si le nombre est pair, sinon 'false'.",
+    "difficulty": "Facile",
+    "tests": [
+      { "input": "4", "output": "true" },
+      { "input": "7", "output": "false" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Calculer la somme d'un tableau",
+    "description": "Écrivez une fonction qui prend un tableau de nombres et retourne la somme de ses éléments.",
+    "difficulty": "Facile",
+    "tests": [
+      { "input": "[1, 2, 3, 4]", "output": 10 },
+      { "input": "[5, 5, 5]", "output": 15 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Compter les voyelles",
+    "description": "Écrivez une fonction qui prend une chaîne de caractères et retourne le nombre de voyelles (a, e, i, o, u) dans cette chaîne.",
+    "difficulty": "Moyen",
+    "tests": [
+      { "input": "\"hello\"", "output": 2 },
+      { "input": "\"aeiou\"", "output": 5 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Vérifier si un mot est un palindrome",
+    "description": "Écrivez une fonction qui prend un mot et retourne 'true' si c'est un palindrome, sinon 'false'.",
+    "difficulty": "Moyen",
+    "tests": [
+      { "input": "\"madam\"", "output": "true" },
+      { "input": "\"hello\"", "output": "false" }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Trouver le plus petit nombre",
+    "description": "Écrivez une fonction qui prend un tableau de nombres et retourne le plus petit nombre.",
+    "difficulty": "Facile",
+    "tests": [
+      { "input": "[1, 2, 3, 4, 5]", "output": 1 },
+      { "input": "[-1, -5, -3]", "output": -5 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Calculer la factorielle",
+    "description": "Écrivez une fonction qui prend un nombre entier et retourne sa factorielle.",
+    "difficulty": "Difficile",
+    "tests": [
+      { "input": "5", "output": 120 },
+      { "input": "7", "output": 5040 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Compter les éléments uniques",
+    "description": "Écrivez une fonction qui prend un tableau et retourne le nombre d'éléments uniques.",
+    "difficulty": "Moyen",
+    "tests": [
+      { "input": "[1, 2, 2, 3, 4, 4, 5]", "output": 5 },
+      { "input": "[1, 1, 1, 1]", "output": 1 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Fusionner deux tableaux",
+    "description": "Écrivez une fonction qui prend deux tableaux et retourne un seul tableau fusionné.",
+    "difficulty": "Facile",
+    "tests": [
+      { "input": "[1, 2, 3], [4, 5, 6]", "output": "[1, 2, 3, 4, 5, 6]" },
+      { "input": "[7, 8], [9, 10]", "output": "[7, 8, 9, 10]" }
+    ]
+  }
+]

@@ -115,17 +115,6 @@ const Quiz = () => {
     setQuizFinished(false);
   };
 
-  // if (quizFinished) {
-  //   return (
-  //     <div>
-  //       <Typography variant="h3" className='text-center'>Quiz terminé !</Typography>
-  //       <Typography variant="p"> Vous avez obtenu {score} point sur {questions.length}.</Typography>
-
-  //       <Button onClick={handleRestartQuiz} className='mt-3'><Typography variant="p"> Recommencer </Typography></Button>
-  //     </div>
-  //   );
-  // }
-
   return (
     <div>
       {!quizFinished ? (
@@ -167,7 +156,7 @@ const Quiz = () => {
             </CardContent>
             <CardFooter className="justify-end">
               <Button onClick={handleNextQuestion} disabled={!selectedAnswer} className="mt-2">
-                Suivant
+                <Typography variant="p">Suivant</Typography>
               </Button>
             </CardFooter>
           </CardHeader>
@@ -176,15 +165,29 @@ const Quiz = () => {
         <AlertDialog open={quizFinished} onOpenChange={() => setQuizFinished(false)}>
           <AlertDialogContent>
             <AlertDialogHeader>
-              <AlertDialogTitle>    <Typography variant="p">Quiz Terminé ! </Typography></AlertDialogTitle>
+              <AlertDialogTitle>
+                <Typography variant="p">
+                  Quiz Terminé !
+                </Typography>
+              </AlertDialogTitle>
               <AlertDialogDescription>
-                <Typography variant="p"> Vous avez obtenu {score} point sur {questions.length}.</Typography>
+                <Typography variant="p">
+                  Vous avez obtenu {score} point sur {questions.length}.
+                </Typography>
               </AlertDialogDescription>
             </AlertDialogHeader>
 
             <AlertDialogFooter>
-              <AlertDialogCancel onClick={handleRestartQuiz}><Typography variant="p">Recommencer</Typography></AlertDialogCancel>
-              <AlertDialogAction onClick={() => setQuizFinished(false)}><Typography variant="p">Fermer</Typography></AlertDialogAction>
+              <AlertDialogCancel onClick={handleRestartQuiz}>
+                <Typography variant="p">
+                  Recommencer
+                </Typography>
+              </AlertDialogCancel>
+              <AlertDialogAction onClick={() => setQuizFinished(false)}>
+                <Typography variant="p">
+                  Fermer
+                </Typography>
+              </AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>
