@@ -3,26 +3,27 @@ import { Typography } from "@/components/ui/Typography";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Layout from "../layout";
 import Link from "next/link";
-
+import { UtensilsCrossed, MessageCircleQuestion, Calculator  } from "lucide-react"
+import Image from "next/image";
 
 const welcomePages = () => {
     const Item = [
         {
             title: "Calculatrice",
             description: "Calculez le coût de votre projet.",
-            image: "",
+            image: <Calculator />,
             href: "/pages/calulator"
         },
         {
             title: "Quiz",
             description: "Déployez votre nouveau projet en un clic.",
-            image: "",
+            image: <MessageCircleQuestion />,
             href: "/pages/quiz"
         },
         {
             title: "Recette cuisine",
             description: "Découvrez des recettes de cuisine.",
-            image: "",
+            image: <UtensilsCrossed />,
             href: "/pages/recep"
 
         }
@@ -38,16 +39,20 @@ const welcomePages = () => {
                         {Item.map((item, index) => (
                             <Card key={index} className="w-[350px] border-gray-300 m-4">
                                 <CardHeader>
-                                    <CardTitle>
-                                        <Typography variant="p">{item.title}</Typography> 
-                                        </CardTitle>
+                                    <CardTitle className="flex">
+                                        <Typography variant="p">{item.title}</Typography> &nbsp;
+                                        {typeof item.image === 'string' ? (
+                                            <Image src={item.image} alt={item.title} width={50} height={50} />
+                                        ) : (
+                                            item.image
+                                        )}
+                                    </CardTitle>
                                     <CardDescription>
                                         <Typography variant="p">{item.description}</Typography>  
-                                       </CardDescription>
+                                    </CardDescription>
                                 </CardHeader>
                                 <CardContent>
-                                    {/* {item.image && <img src={item.image} alt={item.title} />} */}
-                                    <Link href={item.href}><Typography variant="p" className="text-end text-blue-900">Allez à </Typography> </Link>
+                                    <Link href={item.href}><Typography variant="p" className="text-end text-blue-900">Allez à </Typography></Link>
                                 </CardContent>
                             </Card>
                         ))}
