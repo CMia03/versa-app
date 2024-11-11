@@ -2,11 +2,13 @@ import { useState } from "react";
 import { Typography } from "@/components/ui/Typography";
 
 const GamePages = () => {
-  const [squares, setSquares] = useState(Array(9).fill(null));
+  // Typage explicite de squares
+  const [squares, setSquares] = useState<Array<"X" | "O" | null>>(Array(9).fill(null));
   const [isXNext, setIsXNext] = useState(true);
-  const [winner, setWinner] = useState(null);
+  const [winner, setWinner] = useState<"X" | "O" | null>(null); // Typage du winner
 
-  const calculateWinner = (squares: any) => {
+  // Typage explicite de la fonction calculateWinner
+  const calculateWinner = (squares: Array<"X" | "O" | null>): "X" | "O" | null => {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -27,28 +29,27 @@ const GamePages = () => {
     return null;
   };
 
-    const handleClick = (index: number) => {
-      if (squares[index] || winner) return;
+  const handleClick = (index: number) => {
+    if (squares[index] || winner) return;
 
-      const newSquares = squares.slice();
-      newSquares[index] = isXNext ? "X" : "O";
-      setSquares(newSquares);
-      setIsXNext(!isXNext);
-      setWinner(calculateWinner(newSquares));
-    };
+    const newSquares = squares.slice();
+    newSquares[index] = isXNext ? "X" : "O";
+    setSquares(newSquares);
+    setIsXNext(!isXNext);
+    setWinner(calculateWinner(newSquares));
+  };
 
   const renderSquare = (index: number) => {
     return (
       <button
         className="w-24 h-24 text-4xl font-bold border-2 border-gray-400 rounded-lg bg-gray-200 hover:bg-gray-300 focus:outline-none disabled:bg-gray-100"
         onClick={() => handleClick(index)}
-        disabled={squares[index] || winner}
+        disabled={Boolean(squares[index]) || Boolean(winner)}
       >
         {squares[index]}
       </button>
     );
   };
-
   return (
     <div className="flex flex-col items-center mt-20">
       <div className="grid grid-cols-3 gap-2">
