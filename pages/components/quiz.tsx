@@ -56,7 +56,33 @@ const questions: Question[] = [
     options: ["Anglais", "Mandarin", "Espagnol", "Français"],
     answer: "Mandarin",
   },
+  {
+    question: "Qui a écrit 'Le Petit Prince' ?",
+    options: ["J.K. Rowling", "Antoine de Saint-Exupéry", "Albert Camus", "Marcel Proust"],
+    answer: "Antoine de Saint-Exupéry",
+  },
+  {
+    question: "Quel est le plus long fleuve du monde ?",
+    options: ["Nil", "Amazone", "Mississippi", "Yangtsé"],
+    answer: "Nil",
+  },
+  {
+    question: "Quel est l'élément chimique dont le symbole est 'O' ?",
+    options: ["Oxygène", "Osmium", "Or", "Ozone"],
+    answer: "Oxygène",
+  },
+  {
+    question: "En quelle année a eu lieu la Révolution française ?",
+    options: ["1789", "1776", "1804", "1815"],
+    answer: "1789",
+  },
+  {
+    question: "Quel est l'animal terrestre le plus rapide ?",
+    options: ["Guépard", "Lion", "Tigre", "Antilope"],
+    answer: "Guépard",
+  },
 ];
+
 
 
 const Quiz = () => {
