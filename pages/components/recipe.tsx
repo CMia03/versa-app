@@ -2,11 +2,11 @@ import React from 'react';
 
 type RecipeProps = {
   title: string;
-  ingredients: string[];
-  instructions: string[];
+  ingredients?: string[];
+  instructions?: string[];
 };
 
-const RecipeCard: React.FC<RecipeProps> = ({ title, ingredients, instructions }) => {
+const RecipeCard: React.FC<RecipeProps> = ({ title, ingredients = [], instructions = [] }) => {
   return (
     <div className="border p-4 rounded-lg shadow-lg max-w-md mx-auto">
       <h1 className="text-2xl font-bold mb-4">{title}</h1>

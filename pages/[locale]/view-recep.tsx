@@ -1,6 +1,6 @@
 // pages/view-recipe/[id].tsx
 import { useRouter } from 'next/router';
-import ItemData from '../components/item'; // Assurez-vous que le chemin d'importation est correct
+import { ItemData } from '@/lib/item';
 
 const RecipeDetail = () => {
   const router = useRouter();
@@ -14,7 +14,7 @@ const RecipeDetail = () => {
 
   return (
     <div>
-      <h1>{recipe.title}</h1>
+      <h1>{recipe.title} fdsfs</h1>
       <h3>Description</h3>
       <p>{recipe.description}</p>
       <h3>Ingrédients</h3>
