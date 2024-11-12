@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@/pages/layout';
 import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
 import Editor from '@monaco-editor/react';
 import exercices from '../../components/exercices.json';
 import { Typography } from '@/components/ui/Typography';
@@ -26,22 +25,34 @@ export default function ExercisePage() {
     if (!exercise) return;
 
     let success = true;
+    let feedback = ""; // Pour capturer des messages d'erreur spécifiques
+
     for (const test of exercise.tests) {
       try {
-        const input = JSON.parse(test.input);  
-        const func = new Function('input', `${code}`);
+        const input = JSON.parse(test.input); // Conversion en valeur interprétée
+        const expectedOutput = JSON.parse(test.output);
+
+        // Création dynamique de la fonction pour tester
+        const func = new Function('input', `${code}; return inverserChaine(input);`);
         const output = func(input);
-        if (output !== test.output) {
+
+        if (output !== expectedOutput) {
           success = false;
-          break;
+          feedback += `Échec pour l'entrée ${test.input}: attendu ${test.output}, obtenu ${output}. `;
         }
-      } catch (error) {
+      } catch (error: unknown) {
         success = false;
+        if (error instanceof Error) {
+          feedback += `Erreur d'exécution pour l'entrée ${test.input}: ${error.message}. `;
+        } else {
+          feedback += `Erreur d'exécution pour l'entrée ${test.input}: Une erreur inconnue s'est produite. `;
+        }
         break;
       }
     }
-    setResult(success ? "Réussite!" : "Échec, essayez encore.");
+    setResult(success ? "Vous avez réussi !!" : `Échec, essayez encore. ${feedback}`);
   };
+
 
   if (!exercise) return <div>Exercice non trouvé</div>;
 

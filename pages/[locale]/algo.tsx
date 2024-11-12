@@ -6,7 +6,7 @@ import { Code } from 'lucide-react';
 export default function algoPages() {
   return (
     <Layout>
-      <Typography variant="h3">Bienvenue sur la Plateforme d'Exercices d'Algorithmique <Code /></Typography>
+      <Typography variant="h3" className='flex'>Bienvenue sur la Plateforme d&apos;Exercices d&apos;Algorithmique &nbsp;<Code /></Typography>
       <Typography variant="p">Explorez des exercices pour améliorer vos compétences en programmation.</Typography>
 
       <Link href="/pages/exercices">
