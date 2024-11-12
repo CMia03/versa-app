@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Editor from '@monaco-editor/react';
 import { Typography } from '@/components/ui/Typography';
 import { Button } from '@/components/ui/button';
+import { BugPlay  } from "lucide-react"
 
 interface Test {
   input: string;
@@ -70,7 +71,7 @@ export default function ExercisePage() {
 
   return (
     <Layout>
-      <Typography variant="h3">{exercise.title}</Typography> 
+      <Typography variant="h3" className='flex'>{exercise.title} &nbsp; <BugPlay /></Typography> 
       <Typography variant="p">{exercise.description}</Typography> <br />
       <Editor
         height="400px"
