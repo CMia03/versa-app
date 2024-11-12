@@ -6,7 +6,7 @@ import exercices from '../../components/exercices.json';
 import { Typography } from '@/components/ui/Typography';
 import { Badge } from "@/components/ui/badge"
 import { CodeXml } from 'lucide-react';
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 export default function ExercisesList() {
     return (
