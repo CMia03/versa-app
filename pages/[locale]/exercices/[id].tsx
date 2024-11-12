@@ -9,7 +9,6 @@ interface Test {
   input: string;
   output: string;
 }
-
 interface Exercise {
   id: number;
   title: string;
