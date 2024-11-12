@@ -37,7 +37,7 @@ const welcomePages = () => {
         },
         {
             title: "Jeux de mémoire",
-            description: "Découvrez des recettes de cuisine.",
+            description: "Consiste à associer des paires de cartes identiques .",
             image: <Gamepad2 />,
             href: "/pages/memory-game"
 
