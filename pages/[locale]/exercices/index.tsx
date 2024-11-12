@@ -5,7 +5,7 @@ import Link from 'next/link';
 import exercices from '../../components/exercices.json';
 import { Typography } from '@/components/ui/Typography';
 import { Badge } from "@/components/ui/badge"
-import { CodeXml, Code } from 'lucide-react';
+import { Code } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 export default function ExercisesList() {
