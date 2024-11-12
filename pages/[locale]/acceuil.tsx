@@ -5,6 +5,7 @@ import Layout from "../layout";
 import Link from "next/link";
 import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2, Code  } from "lucide-react"
 import Image from "next/image";
+import { LockKeyhole } from 'lucide-react';
 
 const welcomePages = () => {
     const Item = [
@@ -43,9 +44,15 @@ const welcomePages = () => {
         },
         {
             title: "Excercice Algorithme",
-            description: "Découvrez des recettes de cuisine.",
+            description: "Un exercice d'algorithme consiste à résoudre un problème par des étapes logiques.",
             image: <Code />,
             href: "/pages/algo"
+        },
+        {
+            title: "Générateur de mots de passe",
+            description: "Un générateur de mots de passe crée des mots de passe aléatoires.",
+            image: <LockKeyhole />,
+            href: "/pages/generate-pass"
         }
     ]
 
