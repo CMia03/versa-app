@@ -30,7 +30,7 @@ const welcomePages = () => {
         },
         {
             title: "Tic tac Toe",
-            description: "Découvrez des recettes de cuisine.",
+            description: "Un jeu où deux joueurs alignent des symboles sur une grille 3x3.",
             image: <Gamepad2 />,
             href: "/pages/game"
 
