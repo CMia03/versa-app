@@ -5,15 +5,15 @@ import Link from 'next/link';
 import exercices from '../../components/exercices.json';
 import { Typography } from '@/components/ui/Typography';
 import { Badge } from "@/components/ui/badge"
-import { CodeXml } from 'lucide-react';
+import { CodeXml, Code } from 'lucide-react';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 export default function ExercisesList() {
     return (
         <Layout>
-            <Typography variant="h3" className='flex'>Liste des Exercices   <CodeXml /></Typography> <br />
+             <Typography variant="h3" className='flex'>Bienvenue sur la Plateforme d&apos;Exercices d&apos;Algorithmique &nbsp;<Code /></Typography>
+             <Typography variant="p">Explorez des exercices pour améliorer vos compétences en programmation.</Typography> <br />
             <Table>
-                {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
                 <TableHeader>
                     <TableRow>
                         <TableHead className="w-[100px]"> 

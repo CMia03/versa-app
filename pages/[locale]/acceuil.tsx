@@ -46,7 +46,7 @@ const welcomePages = () => {
             title: "Excercice Algorithme",
             description: "Un exercice d'algorithme consiste à résoudre un problème par des étapes logiques.",
             image: <Code />,
-            href: "/pages/algo"
+            href: "/pages/exercices"
         },
         {
             title: "Générateur de mots de passe",
