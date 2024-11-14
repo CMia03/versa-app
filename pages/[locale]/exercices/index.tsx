@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@/pages/layout';
 import Link from 'next/link';
-import exercices from '../../components/exercices.json';
+import exercices from '../../../lib/data/exercices.json';
 import { Typography } from '@/components/ui/Typography';
 import { Badge } from "@/components/ui/badge"
 import { Code } from 'lucide-react';

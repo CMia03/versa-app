@@ -17,7 +17,7 @@ interface Exercise {
   tests: Test[];
 }
 
-import rawExercises from '../../components/exercices.json';
+import rawExercises from '../../../lib/data/exercices.json';
 const exercices = rawExercises as Exercise[];
 
 export default function ExercisePage() {

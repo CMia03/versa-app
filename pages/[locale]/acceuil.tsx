@@ -3,7 +3,7 @@ import { Typography } from "@/components/ui/Typography";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Layout from "../layout";
 import Link from "next/link";
-import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2, Code  } from "lucide-react"
+import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2, Code, Award  } from "lucide-react"
 import Image from "next/image";
 import { LockKeyhole } from 'lucide-react';
 
@@ -53,6 +53,12 @@ const welcomePages = () => {
             description: "Un générateur de mots de passe crée des mots de passe aléatoires.",
             image: <LockKeyhole />,
             href: "/pages/generate-pass"
+        }, 
+        {
+            title: "Jeux collectif",
+            description: "Les jeux collectifs sont des sports d'équipe basés sur la coopération et la stratégie.",
+            image: <Award />,
+            href: "/pages/jeux"
         }
     ]
 

@@ -1,0 +1,126 @@
+[
+    {
+      "id": 1,
+      "titre": "Le Jeu du Mime",
+      "but": "Faire deviner un mot ou une situation sans parler.",
+      "comment_jouer": "Divisez les participants en équipes. Une personne de chaque équipe mime un mot ou une situation, et les autres doivent deviner.",
+      "variante": "Le jeu peut être thématisé (films, métiers, animaux, etc.)."
+    },
+    {
+      "id": 2,
+      "titre": "Le Quiz interactif",
+      "but": "Répondre correctement à des questions pour accumuler des points.",
+      "comment_jouer": "Préparez un ensemble de questions sur des thèmes variés (culture générale, actualités, cinéma, etc.). Vous pouvez utiliser une application pour rendre le jeu plus interactif.",
+      "variante": "Faites des rounds spéciaux (par exemple, un round rapide où les équipes n'ont que 5 secondes pour répondre)."
+    },
+    {
+      "id": 3,
+      "titre": "Le Jeu du Téléphone arabe",
+      "but": "Faire passer un message en chuchotant pour observer les déformations.",
+      "comment_jouer": "Les joueurs se mettent en ligne. La première personne pense à une phrase qu'elle chuchote à l'oreille de la personne suivante. La dernière personne annonce à voix haute le message final, souvent très différent de l’original."
+    },
+    {
+      "id": 4,
+      "titre": "Chaises musicales revisitées",
+      "but": "Trouver une place assise chaque fois que la musique s’arrête.",
+      "comment_jouer": "Placez des chaises en cercle, en ayant une chaise de moins que le nombre de participants. Faites jouer de la musique, et lorsque celle-ci s’arrête, chacun doit trouver une place. Celui qui reste debout est éliminé.",
+      "variante": "Utilisez des coussins ou jouez dans le noir pour augmenter le défi."
+    },
+    {
+      "id": 5,
+      "titre": "La Course de Relais à Objets",
+      "but": "Passer un objet d’une personne à une autre aussi vite que possible.",
+      "comment_jouer": "Formez deux équipes. Chaque équipe doit passer un objet (comme une cuillère avec une balle dessus) à chaque membre, sans le faire tomber. Si l’objet tombe, l’équipe recommence.",
+      "variante": "Changez d’objet pour plus de difficulté (gobelet d’eau, ballon gonflable, etc.)."
+    },
+    {
+      "id": 6,
+      "titre": "Le Jeu du Blind Test",
+      "but": "Reconnaître des chansons le plus rapidement possible.",
+      "comment_jouer": "Préparez une playlist de chansons populaires. Divisez les participants en équipes et jouez quelques secondes de chaque chanson. Les équipes doivent deviner le titre ou l’artiste. La première équipe qui devine correctement gagne un point."
+    },
+    {
+      "id": 7,
+      "titre": "Le Jeu du Scénario Improbable",
+      "but": "Inventer des histoires absurdes en groupe.",
+      "comment_jouer": "Chaque participant ajoute une phrase à l’histoire en cours. La première personne commence avec une phrase comme « Un jour, en se promenant dans la forêt... » et chaque joueur continue en ajoutant une phrase pour faire évoluer le récit de façon imprévisible.",
+      "variante": "Imposez des contraintes (par exemple, chaque phrase doit commencer par la dernière lettre de la phrase précédente)."
+    },
+    {
+      "id": 8,
+      "titre": "Le Jeu des Post-it (Qui suis-je ?)",
+      "but": "Deviner l'identité d’un personnage célèbre ou d’un objet collé sur son front.",
+      "comment_jouer": "Chaque personne colle un post-it sur son front avec un nom d'objet ou de personnage (que les autres peuvent voir mais pas elle). Elle pose des questions auxquelles les autres répondent par \"oui\" ou \"non\" jusqu’à trouver sa réponse."
+    },
+    {
+      "id": 9,
+      "titre": "Le Jeu du 1, 2, 3 Soleil",
+      "but": "Avancer sans se faire repérer.",
+      "comment_jouer": "Une personne est le « maître du jeu » et se place dos au groupe en disant « 1, 2, 3 Soleil ». Pendant ce temps, les autres avancent en direction du maître. Quand le maître se retourne, les autres doivent rester immobiles. Si quelqu’un bouge, il retourne au point de départ.",
+      "variante": "Ajoutez des défis (avancer en sautillant, en marchant en crabe, etc.)."
+    },
+    {
+      "id": 10,
+      "titre": "Le Jeu de la Banquise",
+      "but": "Traverser d'un point A à un point B en évitant de « tomber dans l’eau ». ",
+      "comment_jouer": "Créez une zone avec des « morceaux de glace » (des feuilles de papier ou des cercles dessinés). Les joueurs doivent sauter d’une « glace » à une autre sans tomber dans « l’eau ». Enlevez un morceau de glace à chaque tour pour augmenter la difficulté.",
+      "variante": "Faites-le en équipes avec un chronomètre pour ajouter de la pression."
+    },
+    {
+      "id": 11,
+      "titre": "Le Jeu de la Pyramide Humaine",
+      "but": "Créer des structures humaines.",
+      "comment_jouer": "Divisez le groupe en équipes. Chaque équipe doit former une pyramide humaine ou une autre structure (comme une tour) en un temps donné. L’équipe qui réalise la figure la plus stable et la plus haute gagne.",
+      "variante": "Ajoutez des accessoires (comme des chapeaux ou foulards) pour des figures encore plus créatives."
+    },
+    {
+      "id": 12,
+      "titre": "La Chasse au Trésor",
+      "but": "Trouver tous les indices menant au trésor.",
+      "comment_jouer": "Cachez des objets ou indices dans l’espace de jeu. Divisez les joueurs en équipes et donnez-leur des indices pour trouver le trésor caché. L’équipe qui trouve le trésor en premier gagne.",
+      "variante": "Ajoutez des énigmes ou des défis à chaque étape pour progresser vers le trésor."
+    },
+    {
+      "id": 13,
+      "titre": "Le Jeu des Chaises Musicales avec Épreuves",
+      "but": "Trouver une place assise tout en réalisant une petite épreuve.",
+      "comment_jouer": "Variante des chaises musicales. Quand la musique s'arrête, ceux qui trouvent une place assise doivent réaliser un mini-défi (sauter sur un pied, mimer un animal, etc.) avant de gagner leur place.",
+      "variante": "Remplacez les chaises par des feuilles de papier ou des coussins."
+    },
+    {
+      "id": 14,
+      "titre": "La Statue Étrange",
+      "but": "Imiter des postures précises ou créer des statues originales.",
+      "comment_jouer": "Le meneur demande aux joueurs de prendre une pose (exemple : statue d’une rockstar, d’un animal, etc.). Ceux qui prennent les poses les plus originales ou amusantes gagnent des points.",
+      "variante": "Les participants votent pour élire la statue la plus créative à chaque tour."
+    },
+    {
+      "id": 15,
+      "titre": "Le Jeu des Compliments Cachés",
+      "but": "Encourager l’échange positif et les compliments.",
+      "comment_jouer": "Chacun écrit un compliment ou un mot gentil pour un autre participant sans le nommer et les glisse dans une boîte. À la fin du jeu, on lit chaque compliment, et chacun essaie de deviner qui est le destinataire.",
+      "variante": "À la place, les compliments peuvent être anonymes et lus à voix haute pour créer un moment de bienveillance collective."
+    },
+    {
+      "id": 16,
+      "titre": "Le Défi des Objets Improbables",
+      "but": "Imaginer une nouvelle fonction pour un objet quotidien.",
+      "comment_jouer": "Sortez des objets du quotidien (couvercle de boîte, crayon, chaussette, etc.). Chaque joueur doit imaginer une nouvelle utilité originale et la présenter. Par exemple, un stylo pourrait devenir un bâton de majorette !",
+      "variante": "Répartissez les objets en équipes et donnez-leur un court délai pour une présentation de groupe."
+    },
+    {
+      "id": 17,
+      "titre": "Le Jeu du Portrait Chinois",
+      "but": "Mieux se connaître à travers des questions imagées.",
+      "comment_jouer": "Posez des questions du type « Si tu étais un animal, lequel serais-tu ? », « Si tu étais un pays, lequel ? » Les autres essaient de deviner les réponses des participants pour mieux les connaître.",
+      "variante": "Ajoutez des catégories thématiques (nature, cinéma, nourriture) pour rendre le jeu plus varié."
+    },
+    {
+      "id": 18,
+      "titre": "Le Jeu des Énigmes Collaboratives",
+      "but": "Résoudre des énigmes ensemble.",
+      "comment_jouer": "Divisez les participants en équipes et donnez-leur une série d’énigmes. Chaque énigme résolue leur donne accès à la suivante. L’équipe qui finit le parcours en premier gagne.",
+      "variante": "Incluez des énigmes en mouvement (aller chercher un indice dans un lieu précis)."
+    }
+  ]
+  
