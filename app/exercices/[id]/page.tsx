@@ -1,15 +1,17 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
-import Layout from '@/pages/layout';
-import { useRouter } from 'next/router';
+import { useParams } from 'next/navigation';
 import Editor from '@monaco-editor/react';
 import { Typography } from '@/components/ui/Typography';
 import { Button } from '@/components/ui/button';
-import { BugPlay  } from "lucide-react"
+import { BugPlay } from "lucide-react"
 
 interface Test {
   input: string;
   output: string;
 }
+
 interface Exercise {
   id: number;
   title: string;
@@ -21,15 +23,15 @@ import rawExercises from '../../../lib/data/exercices.json';
 const exercices = rawExercises as Exercise[];
 
 export default function ExercisePage() {
-  const router = useRouter();
-  const { id } = router.query;
+  const params = useParams();
+  const id = params.id;
   const [code, setCode] = useState<string>("// Écrivez votre solution ici");
-  const [result, setResult] = useState<string>(""); 
-  const [exercise, setExercise] = useState<Exercise | null>(null); 
+  const [result, setResult] = useState<string>("");
+  const [exercise, setExercise] = useState<Exercise | null>(null);
 
   useEffect(() => {
     if (id) {
-      const parsedId = parseInt(id as string, 10); 
+      const parsedId = parseInt(id as string, 10);
       const foundExercise = exercices.find((ex) => ex.id === parsedId);
       setExercise(foundExercise || null);
     }
@@ -39,14 +41,13 @@ export default function ExercisePage() {
     if (!exercise) return;
 
     let success = true;
-    let feedback = ""; 
+    let feedback = "";
 
     for (const test of exercise.tests) {
       try {
-        const input = JSON.parse(test.input); 
+        const input = JSON.parse(test.input);
         const expectedOutput = JSON.parse(test.output);
 
-        // Dynamically create a function to test the user's code
         const func = new Function('input', `${code}; return inverserChaine(input);`);
         const output = func(input);
 
@@ -70,8 +71,8 @@ export default function ExercisePage() {
   if (!exercise) return <div>Exercice non trouvé</div>;
 
   return (
-    <Layout>
-      <Typography variant="h3" className='flex'>{exercise.title} &nbsp; <BugPlay /></Typography> 
+    <div>
+      <Typography variant="h3" className='flex'>{exercise.title} &nbsp; <BugPlay /></Typography>
       <Typography variant="p">{exercise.description}</Typography> <br />
       <Editor
         height="400px"
@@ -82,6 +83,6 @@ export default function ExercisePage() {
       />
       <Button onClick={handleSubmit} className='mt-5'>Soumettre</Button>
       {result && <Typography variant="p">Résultat: {result}</Typography>}
-    </Layout>
+    </div>
   );
 }

@@ -1,9 +1,9 @@
+"use client"
 import React from 'react';
 import { useState } from 'react';
 import { Typography } from '@/components/ui/Typography';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import Layout from '../layout';
 import { LockKeyhole } from 'lucide-react';
 import { Slider } from "@/components/ui/slider"
 
@@ -43,7 +43,8 @@ const PasswordGenerator: React.FC = () => {
   };
 
   return (
-    <Layout>
+    <div>
+    <div>
       <Typography variant="h2" className='flex'>
         Générateur de mot de passe   <LockKeyhole />
       </Typography>
@@ -113,7 +114,8 @@ const PasswordGenerator: React.FC = () => {
       >
         Générer le mot de passe
       </Button>
-    </Layout>
+      </div>
+     </div>
   );
 };
 export default PasswordGenerator;

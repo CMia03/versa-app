@@ -1,6 +1,6 @@
+"use client"
 import { useState } from "react";
 import { Typography } from "@/components/ui/Typography";
-import Layout from "../layout";
 
 const GamePages = () => {
   // Typage explicite de squares
@@ -52,7 +52,7 @@ const GamePages = () => {
     );
   };
   return (
-    <Layout>
+   <div>
     <div className="flex flex-col items-center mt-20">
       <div className="grid grid-cols-3 gap-2">
         {renderSquare(0)}
@@ -68,7 +68,7 @@ const GamePages = () => {
       {winner && <div className="mt-4 text-2xl font-semibold text-green-400">{winner}  <Typography variant="p">Vous avez gagné !!</Typography></div>}
       {!winner && squares.every(Boolean) && <div className="mt-4 text-2xl font-semibold"><Typography variant="p">Match null !!</Typography></div>}
     </div>
-    </Layout>
+   </div>
   );
 };
 

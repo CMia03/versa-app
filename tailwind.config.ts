@@ -3,9 +3,11 @@ import type { Config } from "tailwindcss";
 const config: Config = {
     darkMode: ["class"],
     content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    // "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",       // Analyse tous les fichiers dans `app`
+        "./components/**/*.{js,ts,jsx,tsx,mdx}", // Analyse tous les fichiers dans `components`
+        "./hooks/**/*.{js,ts,jsx,tsx,mdx}",     // Si des classes Tailwind sont utilisées dans `hooks`
+        "./index.tsx",                          // Root `index.tsx` file
+        "./layout.tsx",  
   ],
   theme: {
   	extend: {

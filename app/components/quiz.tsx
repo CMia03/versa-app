@@ -1,4 +1,5 @@
 // components/Quiz.tsx
+"use client"
 import { useState } from 'react';
 import { Typography } from '@/components/ui/Typography';
 import { Button } from '@/components/ui/button';
@@ -166,31 +167,24 @@ const Quiz = () => {
           <AlertDialogContent>
             <AlertDialogHeader>
               <AlertDialogTitle>
-                <Typography variant="p">
-                  Quiz Terminé !
-                </Typography>
+                <span>Quiz Terminé !</span>
               </AlertDialogTitle>
               <AlertDialogDescription>
-                <Typography variant="p">
-                  Vous avez obtenu {score} point sur {questions.length}.
-                </Typography>
+                <span>Vous avez obtenu {score} point sur {questions.length}.</span>
               </AlertDialogDescription>
             </AlertDialogHeader>
 
             <AlertDialogFooter>
               <AlertDialogCancel onClick={handleRestartQuiz}>
-                <Typography variant="p">
-                  Recommencer
-                </Typography>
+                <span>Recommencer</span>
               </AlertDialogCancel>
               <AlertDialogAction onClick={() => setQuizFinished(false)}>
-                <Typography variant="p">
-                  Fermer
-                </Typography>
+                <span>Fermer</span>
               </AlertDialogAction>
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>
+
       )}
     </div>
   );

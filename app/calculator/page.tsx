@@ -1,9 +1,9 @@
+"use client"
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Typography } from '@/components/ui/Typography';
 import { Button } from '../../components/ui/button';
 import { Input } from '@/components/ui/input';
-import Layout from '../layout';
 
 export default function Calculator() {
   const [input, setInput] = useState('');
@@ -26,7 +26,7 @@ export default function Calculator() {
   };
 
   return (
-    <Layout>
+    <div>
       <Card className="w-[350px] border-gray-300 m-12">
         <CardHeader>
           <CardTitle>
@@ -154,6 +154,6 @@ export default function Calculator() {
 
         </CardContent>
       </Card>
-    </Layout>
+     </div>
   )
 }

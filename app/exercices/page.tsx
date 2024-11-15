@@ -1,8 +1,7 @@
 
 import React from 'react';
-import Layout from '@/pages/layout';
 import Link from 'next/link';
-import exercices from '../../../lib/data/exercices.json';
+import exercices from '../../lib/data/exercices.json';
 import { Typography } from '@/components/ui/Typography';
 import { Badge } from "@/components/ui/badge"
 import { Code } from 'lucide-react';
@@ -10,7 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 
 export default function ExercisesList() {
     return (
-        <Layout>
+        <div>
              <Typography variant="h3" className='flex'>Bienvenue sur la Plateforme d&apos;Exercices d&apos;Algorithmique &nbsp;<Code /></Typography>
              <Typography variant="p">Explorez des exercices pour améliorer vos compétences en programmation.</Typography> <br />
             <Table>
@@ -43,7 +42,7 @@ export default function ExercisesList() {
                                 </Typography>
                             </TableCell>
                             <TableCell className="font-medium">  
-                                <Link href={`/pages/exercices/${exercise.id}`} legacyBehavior className='!cursor-pointer'>
+                                <Link href={`/exercices/${exercise.id}`} legacyBehavior className='!cursor-pointer'>
                                   <Typography variant="p">
                                     {exercise.title}
                                   </Typography>
@@ -62,6 +61,6 @@ export default function ExercisesList() {
                     ))}
                 </TableBody>
             </Table>
-        </Layout>
+            </div>
     );
 }
