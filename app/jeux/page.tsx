@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import gameJson from "@/lib/data/jeux.json";
 import social from "@/public/images/social-game.png";
 import Image from "next/image";
-
 const CollectifPage: React.FC = () => {
     return (
         <div>
