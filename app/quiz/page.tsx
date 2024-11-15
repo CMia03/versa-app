@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography } from "@/components/ui/Typography";
-import Quiz from "../components/quiz";
+import Quiz from "../../components/versa/quiz";
 import { MessageCircleQuestion } from 'lucide-react';
 const QuizPages = () => {
     return (
