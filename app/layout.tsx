@@ -36,18 +36,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                                 
                                 {/* Navigation desktop */}
                                 <nav className="hidden md:flex items-center space-x-6">
-                                    <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                                    <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                                         Accueil
-                                    </a>
-                                    <a href="/calculator" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                                    </Link>
+                                    <Link href="/calculator" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                                         Calculatrice
-                                    </a>
-                                    <a href="/quiz" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                                    </Link>
+                                    <Link href="/quiz" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                                         Quiz
-                                    </a>
-                                    <a href="/recep" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                                    </Link>
+                                    <Link href="/recep" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
                                         Recettes
-                                    </a>
+                                    </Link>
                                 </nav>
 
                                 {/* Navigation mobile */}

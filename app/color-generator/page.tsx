@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -15,17 +15,12 @@ export default function ColorGenerator() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
   };
 
-  const generatePalette = () => {
+  const generatePalette = useCallback(() => {
     const newColors = Array.from({ length: 5 }, () => generateRandomColor());
     setColors(newColors);
-  };
+  }, []);
 
   const generateFromColor = (baseColor: string) => {
-    const base = baseColor.replace('#', '');
-    const r = parseInt(base.substr(0, 2), 16);
-    const g = parseInt(base.substr(2, 2), 16);
-    const b = parseInt(base.substr(4, 2), 16);
-
     const palette = [
       baseColor,
       adjustBrightness(baseColor, 0.2),
@@ -58,7 +53,8 @@ export default function ColorGenerator() {
 
     const max = Math.max(r, g, b);
     const min = Math.min(r, g, b);
-    let h = 0, s = 0, l = (max + min) / 2;
+    let h = 0, s = 0;
+    const l = (max + min) / 2;
 
     if (max !== min) {
       const d = max - min;
@@ -118,7 +114,7 @@ export default function ColorGenerator() {
 
   useEffect(() => {
     generatePalette();
-  }, []);
+  }, [generatePalette]);
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4">
@@ -261,7 +257,7 @@ export default function ColorGenerator() {
         {/* Tips */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-violet-50 to-purple-50 rounded-xl p-4 border border-violet-100">
-            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d'utilisation</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d&apos;utilisation</h3>
             <p className="text-sm text-gray-600">
               Cliquez sur une couleur pour la copier. Utilisez le sélecteur de couleur pour créer des palettes harmonieuses basées sur une couleur de votre choix.
             </p>

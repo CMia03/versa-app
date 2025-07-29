@@ -1,8 +1,7 @@
 import React from "react";
-import { Typography } from "@/components/ui/Typography";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2, Code, Award, LockKeyhole, Sparkles, Clock, Palette, Music, BookOpen, Calendar, Target, Zap, Heart, MessageSquare } from "lucide-react";
+import { UtensilsCrossed, MessageCircleQuestion, Calculator, Gamepad2, Code, Award, LockKeyhole, Sparkles, Clock, Palette, BookOpen, Calendar, Target, Zap, Heart, MessageSquare } from "lucide-react";
 
 const WelcomePages = () => {
     const Item = [
@@ -148,7 +147,7 @@ const WelcomePages = () => {
                     <Sparkles className="w-8 h-8 text-pink-600 ml-3" />
                 </div>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    L'application polyvalente pour toutes vos besoins regroupe des outils essentiels, 
+                    L&apos;application polyvalente pour toutes vos besoins regroupe des outils essentiels, 
                     simplifiant ainsi votre quotidien en une seule plateforme pratique et moderne.
                 </p>
             </div>

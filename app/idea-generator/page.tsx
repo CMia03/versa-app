@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
-import { Zap, RefreshCw, Heart, Share2, Copy, BookOpen, Palette, Gamepad2, Camera, Music, Code, Lightbulb } from 'lucide-react';
+import { Zap, RefreshCw, Heart, Share2, Copy, BookOpen, Palette, Code, Lightbulb } from 'lucide-react';
 
 export default function IdeaGenerator() {
   const [currentIdea, setCurrentIdea] = useState<string>('');
@@ -140,10 +140,10 @@ export default function IdeaGenerator() {
               <Zap className="w-6 h-6" />
             </div>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-              Générateur d'Idées
+              Générateur d&apos;Idées
             </h1>
           </div>
-          <p className="text-gray-600">Trouvez l'inspiration avec nos idées créatives</p>
+          <p className="text-gray-600">Trouvez l&apos;inspiration avec nos idées créatives</p>
         </div>
 
         {/* Category Selector */}
@@ -187,7 +187,7 @@ export default function IdeaGenerator() {
                 </p>
               ) : (
                 <p className="text-lg text-gray-500 text-center">
-                  Cliquez sur "Générer une idée" pour commencer
+                  Cliquez sur &quot;Générer une idée&quot; pour commencer
                 </p>
               )}
             </div>
@@ -263,9 +263,9 @@ export default function IdeaGenerator() {
         {/* Tips */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl p-4 border border-yellow-100">
-            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d'utilisation</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d&apos;utilisation</h3>
             <p className="text-sm text-gray-600">
-              Explorez différentes catégories pour trouver l'inspiration. Sauvegardez vos idées favorites et partagez-les avec votre équipe !
+              Explorez différentes catégories pour trouver l&apos;inspiration. Sauvegardez vos idées favorites et partagez-les avec votre équipe !
             </p>
           </div>
         </div>

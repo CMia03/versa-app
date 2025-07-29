@@ -1,7 +1,6 @@
 "use client"
 import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
-import { Typography } from '@/components/ui/Typography';
 import { Button } from '../../components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Calculator as CalculatorIcon, RotateCcw, ArrowLeft } from 'lucide-react';
@@ -110,7 +109,7 @@ export default function Calculator() {
               <Button
                 onClick={clearHistory}
                 className="p-4 text-lg font-semibold text-white bg-gradient-to-r from-red-500 to-red-600 rounded-xl hover:from-red-600 hover:to-red-700 transition-all duration-200 shadow-lg hover:shadow-xl"
-                title="Effacer l'historique"
+                title="Effacer l&apos;historique"
               >
                 <RotateCcw className="w-5 h-5" />
               </Button>
@@ -171,9 +170,9 @@ export default function Calculator() {
         {/* Tips */}
         <div className="mt-8 text-center">
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-4 border border-blue-100">
-            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d'utilisation</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d&apos;utilisation</h3>
             <p className="text-sm text-gray-600">
-              Utilisez les opérateurs +, -, ×, ÷ pour vos calculs. L'historique vous aide à suivre vos opérations.
+              Utilisez les opérateurs +, -, ×, ÷ pour vos calculs. L&apos;historique vous aide à suivre vos opérations.
             </p>
           </div>
         </div>

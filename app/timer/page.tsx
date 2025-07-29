@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,7 +12,13 @@ export default function Timer() {
   const [inputMinutes, setInputMinutes] = useState('');
   const [isMuted, setIsMuted] = useState(false);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const playAlarm = useCallback(() => {
+    if (!isMuted && audioRef.current) {
+      audioRef.current.play();
+    }
+  }, [isMuted]);
 
   useEffect(() => {
     if (isRunning) {
@@ -37,13 +43,7 @@ export default function Timer() {
         clearInterval(intervalRef.current);
       }
     };
-  }, [isRunning, mode]);
-
-  const playAlarm = () => {
-    if (!isMuted && audioRef.current) {
-      audioRef.current.play();
-    }
-  };
+  }, [isRunning, mode, playAlarm]);
 
   const formatTime = (seconds: number) => {
     const hours = Math.floor(seconds / 3600);
@@ -205,7 +205,7 @@ export default function Timer() {
         {/* Tips */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-red-50 to-pink-50 rounded-xl p-4 border border-red-100">
-            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d'utilisation</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d&apos;utilisation</h3>
             <p className="text-sm text-gray-600">
               {mode === 'timer' 
                 ? 'Utilisez le minuteur pour la technique Pomodoro ou pour cuisiner. Les boutons rapides vous font gagner du temps !'

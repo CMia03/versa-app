@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Calendar, Plus, Edit3, Trash2, ChevronLeft, ChevronRight, Clock, MapPin, Users, Tag } from 'lucide-react';
+import { Calendar, Plus, Edit3, Trash2, ChevronLeft, ChevronRight, Clock, MapPin, Tag } from 'lucide-react';
 
 interface Event {
   id: string;
@@ -404,7 +404,7 @@ export default function CalendarPage() {
             <CardContent className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input
-                  placeholder="Titre de l'événement"
+                  placeholder="Titre de l&apos;événement"
                   value={newEvent.title}
                   onChange={(e) => setNewEvent({...newEvent, title: e.target.value})}
                 />
@@ -471,7 +471,7 @@ export default function CalendarPage() {
         {/* Tips */}
         <div className="text-center mt-8">
           <div className="bg-gradient-to-r from-rose-50 to-red-50 rounded-xl p-4 border border-rose-100">
-            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d'utilisation</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d&apos;utilisation</h3>
             <p className="text-sm text-gray-600">
               Cliquez sur une date pour voir les événements du jour. Utilisez les catégories pour organiser vos événements. 
               Vos événements sont automatiquement sauvegardés.

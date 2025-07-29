@@ -352,7 +352,7 @@ export default function Notes() {
         {/* Tips */}
         <div className="text-center mt-8">
           <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-4 border border-amber-100">
-            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d'utilisation</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d&apos;utilisation</h3>
             <p className="text-sm text-gray-600">
               Utilisez les tags pour organiser vos notes. La recherche fonctionne sur le titre et le contenu. Vos notes sont automatiquement sauvegardées.
             </p>

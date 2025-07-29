@@ -381,11 +381,11 @@ export default function QuotesGenerator() {
                 </div>
               ) : currentQuote ? (
                 <div className="text-center">
-                  <div className="text-2xl text-emerald-600 mb-4">"</div>
+                  <div className="text-2xl text-emerald-600 mb-4">&quot;</div>
                   <p className="text-xl text-gray-800 leading-relaxed mb-6">
                     {currentQuote.text}
                   </p>
-                  <div className="text-2xl text-emerald-600 mb-4">"</div>
+                  <div className="text-2xl text-emerald-600 mb-4">&quot;</div>
                   <p className="text-lg font-semibold text-gray-700">
                     — {currentQuote.author}
                   </p>
@@ -394,7 +394,7 @@ export default function QuotesGenerator() {
                 <div className="text-center">
                   <MessageSquare className="w-16 h-16 text-gray-300 mx-auto mb-4" />
                   <p className="text-lg text-gray-500">
-                    Cliquez sur "Générer une citation" pour commencer
+                    Cliquez sur &quot;Générer une citation&quot; pour commencer
                   </p>
                 </div>
               )}
@@ -474,7 +474,7 @@ export default function QuotesGenerator() {
                         </Button>
                       </div>
                       <blockquote className="text-gray-700 italic mb-2">
-                        "{quote.text}"
+                        &quot;{quote.text}&quot;
                       </blockquote>
                       <p className="text-sm font-semibold text-gray-600">
                         — {quote.author}
@@ -490,9 +490,9 @@ export default function QuotesGenerator() {
         {/* Tips */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-100">
-            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d'utilisation</h3>
+            <h3 className="font-semibold text-gray-800 mb-2">💡 Conseils d&apos;utilisation</h3>
             <p className="text-sm text-gray-600">
-              Explorez différentes catégories pour trouver l'inspiration. Sauvegardez vos citations favorites 
+              Explorez différentes catégories pour trouver l&apos;inspiration. Sauvegardez vos citations favorites 
               et partagez-les avec vos proches pour les motiver !
             </p>
           </div>
